@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Henrique Silveira Dutra                    %                                                             
+%                 Digital Communication Systems Lab              %                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function bitstream = qpsk_demapper(I, Q)
 
     % Initialize bitstream vector
