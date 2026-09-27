@@ -1,6 +1,6 @@
 # Performance Evaluation of QPSK and 16-QAM Systems
 
-MATLAB simulation developed for the *Digital Communication Systems Lab I* course .
+MATLAB simulation developed for the *Digital Communication Systems Lab I* course.
 
 ## Objectives
 
