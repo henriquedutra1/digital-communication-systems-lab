@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Henrique Silveira Dutra                    %                                                             
+%                 Digital Communication Systems Lab              %                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function bitstream = qam16_demapper(I, Q)
 
     % Inicializar vetor de bits
