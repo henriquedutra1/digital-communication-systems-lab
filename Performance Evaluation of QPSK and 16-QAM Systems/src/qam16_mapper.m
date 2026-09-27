@@ -1,19 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Henrique Silveira Dutra                    %                                                             
+%                 Digital Communication Systems Lab              %                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function [I_16, Q_16] = qam16_mapper(bitstream)
-    % Verifica se o número de bits é múltiplo de 4 (16-QAM utiliza 4 bits por símbolo)
+    % Verifica se o nÃºmero de bits Ã© mÃºltiplo de 4 (16-QAM utiliza 4 bits por sÃ­mbolo)
     if mod(length(bitstream), 4) ~= 0
-        error('O comprimento do bitstream deve ser um múltiplo de 4 para 16-QAM.');
+        error('O comprimento do bitstream deve ser um mÃºltiplo de 4 para 16-QAM.');
     end
     
-    % Inicialização dos vetores de saída para partes I e Q
+    % InicializaÃ§Ã£o dos vetores de saÃ­da para partes I e Q
     I_16 = zeros(1, length(bitstream)/4);
     Q_16 = zeros(1, length(bitstream)/4);
     
-    % Mapeamento dos símbolos de acordo com o bitstream
+    % Mapeamento dos sÃ­mbolos de acordo com o bitstream
     for i = 1:length(bitstream)/4
-        % Extrai os 4 bits correspondentes ao próximo símbolo
+        % Extrai os 4 bits correspondentes ao prÃ³ximo sÃ­mbolo
         bits = bitstream((i-1)*4 + (1:4));
         
-        % Mapeamento dos bits para partes I e Q do símbolo
+        % Mapeamento dos bits para partes I e Q do sÃ­mbolo
         if bits(1) == 0 && bits(2) == 0
             I_16(i) = -3;
         elseif bits(1) == 0 && bits(2) == 1
