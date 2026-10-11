@@ -66,7 +66,7 @@ Adding the block encoder/decoder significantly reduces BER for both modulations 
 At low SNR, constellation points are heavily dispersed and overlapping, leading to high symbol error probability. As SNR increases, clusters become tighter and clearly separated. The received signal spectrum shows that AWGN adds uniform noise power across all frequencies, including inside the signal's passband, degrading fidelity at low SNR while preserving the original spectral shape at high SNR.
 
 <p align="center">
-  <img src="results/constelation.png" width="500">
+  <img src="results/constelation.png" width="800">
 </p>
 
 ## Repository Structure
