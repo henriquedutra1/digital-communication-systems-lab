@@ -100,3 +100,4 @@ experiment-07-ber-awgn-qpsk-16qam/
 
 1. HAYKIN, S., MOHER, M. *Sistemas de Comunicação*, 5th Ed. Porto Alegre: Bookman, 2011.
 2. PROAKIS, J. G., SALEHI, M. *Communication Systems Engineering*, 2nd Ed. New Jersey: Prentice Hall, 2002.
+3. MÜLLER, C. Performance Evaluation of QPSK and 16-QAM Systems, Lab guide. Santa Maria: Federal University of Santa Maria (UFSM), 2024.
