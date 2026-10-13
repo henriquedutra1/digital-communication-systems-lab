@@ -1,0 +1,29 @@
+function [W, e] = LMS(i, q, i_treino, q_treino, L, eta)
+
+    % Etapa 1: Inicialização do vetor de pesos (complexos) e vetor regressor
+    W = complex(zeros(1, L));
+    rk = zeros(1, L);   
+
+    % Inicialização do vetor de símbolos recebidos (u) e de treino (d)
+    u = i + 1i*q;
+    d = i_treino + 1i*q_treino;
+
+    % Inicialização do índice
+    N = length(d);
+
+    % implementação da rotina de treino do equalizador LMS
+    for n = L:N
+
+        % Alocação dos regressores 
+        rk = u(n:-1:n-L+1);
+
+        % Cálculo do sinal de saída
+        y(n) = rk * W.';
+
+        % Cálculo do erro
+        e(n) = d(n) - y(n);
+
+        % Atualização do vetor peso
+        W = W + eta*e(n)*conj(rk);
+    end
+end
