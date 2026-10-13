@@ -77,6 +77,6 @@ The full report with every figure is available in [`results/report.pdf`](results
 
 ## References
 
-1. HAYKIN, S., MOHER, M. *Sistemas de Comunicação*, 5th Ed. Porto Alegre: Bookman, 2011.
-2. PROAKIS, J. G., SALEHI, M. *Communication Systems Engineering*, 2nd Ed. New Jersey: Prentice Hall, 2002.
+1. HAYKIN, S. Adaptive Filter Theory, 3rd ed., Prentice Hall, Upper Saddle River, New Jersey, 1996. 
+2. WIDROW, B., McCOOL, J. BALL, M. The Complex LMS Algorithm, Proceedings of IEEE, vol. 63, no 4, pp. 719-720, Abril, 1975. )
 3. MÜLLER, C. LMS Equalization of QPSK and 16-QAM over Dispersive Channels, Lab guide. Santa Maria: Federal University of Santa Maria (UFSM), 2024.
