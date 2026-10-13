@@ -1,8 +1,8 @@
 function [I, Q] = mapper_QPSK(bitstream)
-% Definindo os símbolos QPSK
+% Definindo os sÃ­mbolos QPSK
     symbols = [1+1i, -1+1i, 1-1i, -1-1i];
     
-    % Mapeamento dos bits para os símbolos QPSK
+    % Mapeamento dos bits para os sÃ­mbolos QPSK
     I = zeros(1, length(bitstream)/2);
     Q = zeros(1, length(bitstream)/2);
     
@@ -10,10 +10,10 @@ function [I, Q] = mapper_QPSK(bitstream)
         % Obtendo o par de bits
         par_bits = bitstream(i:i+1);
         
-        % Convertendo o par de bits para um índice decimal
+        % Convertendo o par de bits para um Ã­ndice decimal
         index = bin2dec(num2str(par_bits)) + 1;
         
-        % Atribuindo o símbolo correspondente
+        % Atribuindo o sÃ­mbolo correspondente
         I((i+1)/2) = real(symbols(index));
         Q((i+1)/2) = imag(symbols(index));
     end
