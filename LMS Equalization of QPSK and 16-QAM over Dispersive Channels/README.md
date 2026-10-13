@@ -36,6 +36,26 @@ This experiment extends the QPSK / 16-QAM link from [Performance Evaluation of Q
 | Bitstream length | 500,000 bits |
 | Frequency response resolution | 4096 points |
 
+## Results
+
+### Constellation before and after the LMS equalizer (16-QAM, Brazil A channel)
+
+<p align="center">
+  <img src="results/constellation_16qam_channel_a_lms.png" width="550">
+</p>
+
+The multipath channel smears the 16-QAM symbols into a single cloud at the demapper input (top). After the LMS equalizer is trained, the 16 constellation points become clearly separated again (bottom).
+
+### BER with and without equalization (16-QAM, Brazil A channel)
+
+<p align="center">
+  <img src="results/ber_16qam_channel_a_lms.png" width="550">
+</p>
+
+Without equalization, the BER over the Brazil A channel barely improves as the SNR increases. With the LMS equalizer the curve drops again and ends up roughly 2 dB from the reference 16-QAM curve.
+
+The full set of plots (spectra, constellations for both channels, error curves and step-size comparison) is in the PDF report.
+
 ## Repository contents
 
 ```
@@ -44,7 +64,9 @@ This experiment extends the QPSK / 16-QAM link from [Performance Evaluation of Q
 ├── exp9.mlx            (main Live Script)
 ├── <function files>.m  (modulator, demodulator, BER curves, LMS, ...)
 └── results/
-    └── exp9_report.pdf (full report: code, equations and figures)
+    ├── exp9_report.pdf (full report: code, equations and figures)
+    ├── constellation_16qam_channel_a_lms.png
+    └── ber_16qam_channel_a_lms.png
 ```
 
 The full report with every figure is available in [`results/report.pdf`](results/exp9_report.pdf).
