@@ -1,8 +1,8 @@
-# Experiment 09: LMS Equalization of QPSK and 16-QAM over Dispersive Channels
+# LMS Equalization of QPSK and 16-QAM over Dispersive Channels
 
 MATLAB simulation developed for the *Digital Communication Systems Lab I* course taught by Prof. Candice Müller.
 
-This experiment extends the QPSK / 16-QAM link from [Experiment 07](../Performance%20Evaluation%20of%20QPSK%20and%2016-QAM%20Systems) by replacing the ideal AWGN channel with multipath (dispersive) channels, and then recovering the signal with an adaptive LMS equalizer.
+This experiment extends the QPSK / 16-QAM link from [Performance Evaluation of QPSK and 16-QAM Systems](../Performance%20Evaluation%20of%20QPSK%20and%2016-QAM%20Systems) by replacing the ideal AWGN channel with multipath (dispersive) channels, and then recovering the signal with an adaptive LMS equalizer.
 
 ## What this project covers
 
@@ -47,7 +47,7 @@ This experiment extends the QPSK / 16-QAM link from [Experiment 07](../Performan
     └── exp9_report.pdf (full report: code, equations and figures)
 ```
 
-The full report with every figure is available in [`results/exp9_report.pdf`](results/exp9_report.pdf).
+The full report with every figure is available in [`results/report.pdf`](results/exp9_report.pdf).
 
 ## Tools
 
@@ -57,3 +57,4 @@ The full report with every figure is available in [`results/exp9_report.pdf`](re
 
 1. HAYKIN, S., MOHER, M. *Sistemas de Comunicação*, 5th Ed. Porto Alegre: Bookman, 2011.
 2. PROAKIS, J. G., SALEHI, M. *Communication Systems Engineering*, 2nd Ed. New Jersey: Prentice Hall, 2002.
+3. MÜLLER, C. LMS Equalization of QPSK and 16-QAM over Dispersive Channels, Lab guide. Santa Maria: Federal University of Santa Maria (UFSM), 2024.
